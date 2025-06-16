@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foodie Express</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="top-nav">
+    <div class="logo">Foodie Express</div>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#cart">Cart</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to <span>Foodie Express</span></h1>
+      <p>Your favorite meals, delivered fresh & fast!</p>
+      <a href="#menu" class="btn primary-btn">View Our Menu</a>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <main>
+    <section id="menu" class="menu">
+      <h2>Our Menu</h2>
+      <div class="menu-grid">
+        <div class="item-card">
+          <img src="https://media.istockphoto.com/id/1045565238/photo/tasty-burger-on-a-wooden-table.webp?a=1&b=1&s=612x612&w=0&k=20&c=VOAHX2stY0k7KTIoUa7w6PciepDkkM-CESeERbKD778=" alt="Burger" />
+          <h3>Classic Burger</h3>
+          <p>Price: Rs.750</p>
+          <select>
+            <option value="Regular">Regular</option>
+            <option value="Large">Large (+$2)</option>
+          </select>
+          <button onclick="addToCart('Classic Burger', 750)">Add to Cart</button>
+        </div>
+        <div class="item-card">
+          <img src="https://media.istockphoto.com/id/2179542678/photo/hands-taking-a-slice-of-delicious-pizza-with-mushrooms-and-stretching-cheese-in-a-pizzeria.webp?a=1&b=1&s=612x612&w=0&k=20&c=5FXPivFMOkSjMdCilTZV1U3jo9BPNIa0C-hN3aaOKN4=" alt="Pizza" />
+          <h3>Cheesy Pizza</h3>
+          <p>Price: Rs.1500</p>
+          <select>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large (+$2)</option>
+          </select>
+          <button onclick="addToCart('Cheesy Pizza', 1500)">Add to Cart</button>
+        </div>
+        <div class="item-card">
+          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=400&q=60" alt="Double Burger" />
+          <h3>Double Patty Burger</h3>
+          <p>Price: Rs.800</p>
+          <select>
+            <option value="Regular">Regular</option>
+            <option value="Spicy">Spicy (+$1)</option>
+          </select>
+          <button onclick="addToCart('Double Patty Burger', 800)">Add to Cart</button>
+        </div>
+        <div class="item-card">
+          <img src="https://media.istockphoto.com/id/938742222/photo/cheesy-pepperoni-pizza.webp?a=1&b=1&s=612x612&w=0&k=20&c=Y_A9zcMlkA1A4q3yer6P2ZrRlek8il9-P0uxQUY6WSA=" alt="Pepperoni Pizza" />
+          <h3>Pepperoni Pizza</h3>
+          <p>Price: Rs.1400</p>
+          <select>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large (+$2)</option>
+          </select>
+          <button onclick="addToCart('Pepperoni Pizza', 1400)">Add to Cart</button>
+        </div>
+        <div class="item-card">
+          <img src="https://media.istockphoto.com/id/180698997/photo/beef-souvlaki-wrap.webp?a=1&b=1&s=612x612&w=0&k=20&c=iPBsE9ekglkK1bMQGS1yt-MuqlQgbxI6eMwv1Swcfd4=" alt="Pepperoni Pizza" />
+          <h3>Shawarma and Fries</h3>
+          <p>Price: Rs.650</p>
+          <button onclick="addToCart('Shawarma and Fries', 650)">Add to Cart</button>
+        </div>
+        <div class="item-card">
+          <img src="https://media.istockphoto.com/id/154962256/photo/pita-pocket-with-grilled-chicken.webp?a=1&b=1&s=612x612&w=0&k=20&c=wgbXbmBGgQXRiAeGusDnIuR-O45Q8uh1FD56gupmW-w=" alt="Pepperoni Pizza" />
+          <h3>Chicken Pockets</h3>
+          <p>Price: Rs.500</p>
+          <button onclick="addToCart('Chicken Pockets', 500)">Add to Cart</button>
+        </div>
+        <div class="item-card">
+          <img src="https://plus.unsplash.com/premium_photo-1695927470343-f80f750aa920?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3RyYXdiZXJyeSUyMHNoYWtlfGVufDB8fDB8fHww" alt="Pepperoni Pizza" />
+          <h3>Strwaberry Shake</h3>
+          <p>Price: Rs.250</p>
+          <button onclick="addToCart('Strwaberry Shake', 250)">Add to Cart</button>
+        </div>
+        <div class="item-card">
+          <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hvY29sYXRlJTIwc2hha2V8ZW58MHx8MHx8fDA%3D" alt="Pepperoni Pizza" />
+          <h3>Chocolate Shake</h3>
+          <p>Price: Rs.300</p>
+          <button onclick="addToCart('Chocolate Shake', 300)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart">
+      <h2>Your Cart</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price (Rs.)</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="cart-body">
+          <!-- Cart items will be injected here -->
+        </tbody>
+      </table>
+      <h3>Total: Rs.<span id="total">0.00</span></h3>
+      <button onclick="placeOrder()" class="order-btn">Place Order</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Foodie Express. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
